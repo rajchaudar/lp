@@ -23,6 +23,7 @@ class PageReplacement {
                     for (int j = 1; j < capacity; j++) {
                         memory[j - 1] = memory[j];
                     }
+                    
                     memory[capacity - 1] = pages[i]; // Add the new page to memory
                 }
                 pageFaults++; // Increase the page fault count
@@ -31,6 +32,18 @@ class PageReplacement {
 
         return pageFaults;
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
     static boolean search(int key, int[] fr) {
         for (int i = 0; i < fr.length; i++) {
